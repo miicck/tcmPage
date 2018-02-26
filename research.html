@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Michael Hutcheon - research</title>
+	<meta charset="UTF-8">
+	<link rel=stylesheet href=styles.css>
+
+</head>
+
+<body>
+    <div class=page>
+        <div class=header>
+            <a href=index.html>
+                <div class=tab>
+                    Home
+                </div>
+            </a>
+            <a href=research.html>
+                <div class=tab id=selected>
+                    Research
+                </div>
+            </a>
+            <a href=music.html>
+                <div class=tab>
+                    Music
+                </div>
+            </a>
+        </div>
+
+        <div class=buffer></div>   
+
+        <div class=content>
+            <div class=contentText>
+                I have been known to do some work occasionally, here is some of it:
+                <h1>Variational quantum monte carlo code</h1>
+                I am in the process of writing a simple variational quantum monte carlo (VQMC) code which can be found <a href=https://github.com/miicck/vqmc class=inline>here</a>.
+                A summary of VQMC and some results obtained using this code can be found <a href=pdfs/vqmc.pdf class=inline>here</a>. The code can be used to construct a multi-electron
+                wavefunction from atomic basis sets, and calculate the resulting variational energy in the presence of nucleii of your choosing. It will automatically
+                enforce the correct exchange symmetry via a slater determinant and attempt to recover some of the correlation energy using a Jastrow factor. It works quite well for atomic
+                and small molecular systems. Monte carlo is very easy to parallelise so there is a parallel branch (using MPI), as well as a serial version.
+
+                <h1>Masters dissertation</h1>
+                I did a masters degree at Oxford before my PhD. My masters was broadly in the area of quantum computing, and my dissertation was on photon induced dechoerence of
+                superconducting charge qubits. It can be found <a href=pdfs/masters.pdf class=inline>here</a>.
+
+                <h1>Rutherford Appleton Labs</h1>
+                In the summer of 2016 I interned at the STFC Rutherford Appleton Labs particle physics department. Whilst there I designed, implemented and tested several algorithms
+                for interaction vertex reconstruc-tion intended for the proposed 2025 upgrade of the CMS detector at CERN. A report on these is available
+                <a href=pdfs/ral.pdf class=inline>here</a>. Whilst there I also wrote a user guide on the DELPHES detector modelling software which can be found
+                <a href=pdfs/delphes.pdf class=inline>here</a>.
+            </div>
+
+            <div class=figures>
+                <div class=figure>
+                    <img src=images/vqmcWavefunctions.png class=figure>
+                    <div class=caption>Figure 1: Some pretty pictures obtained using my VQMC code.</div>
+                </div>
+
+                <br><br>
+
+                <div class=figure>
+                    <img src=images/ramsey.png class=figure>
+                    <div class=caption>Figure 2: An illustration of the Ramsey experement, <br> which played an important role in my Masters project.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=footer>
+        What are you doing down here?
+    </div>
+
+</body>
+
+</html>
