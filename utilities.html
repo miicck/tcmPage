@@ -1,0 +1,50 @@
+<head>
+    <link rel="stylesheet" href="utilStyles.css">
+    <script src="math.js"> </script>
+    <script src="basisTransform.js"> </script>    
+</head>
+
+<body>
+
+    <span class=offScreen id=oneCharWide> x </span>
+    Solves Aa = Bb for b
+    <div class=vectorEquation>
+
+        <div class=vector>
+            <input type=text id=A11 value=1> <input type=text id=A12 value=0> <input type=text id=A13 value=0> <br>
+            <input type=text id=A21 value=0> <input type=text id=A22 value=1> <input type=text id=A23 value=0> <br>
+            <input type=text id=A31 value=0> <input type=text id=A32 value=0> <input type=text id=A33 value=1> <br>
+        </div>
+
+        <div class=vector>
+            <input type=text id=a1 value=1> <br>
+            <input type=text id=a2 value=0> <br>
+            <input type=text id=a3 value=0> <br>
+        </div>
+
+        <div class=vectorEquals>=</div>
+
+        <div class=vector>
+            <input type=text id=B11 value=1> <input type=text id=B12 value=0> <input type=text id=B13 value=0> <br>
+            <input type=text id=B21 value=0> <input type=text id=B22 value=1> <input type=text id=B23 value=0> <br>
+            <input type=text id=B31 value=0> <input type=text id=B32 value=0> <input type=text id=B33 value=1> <br>
+        </div>
+
+        <div class=vector>
+            <input type=text id=b1 value=1> <br>
+            <input type=text id=b2 value=0> <br>
+            <input type=text id=b3 value=0> <br>
+        </div>
+
+    </div>
+
+    From csv: <input type=text id=csvInput value="1,0,0,0,1,0,0,0,1"> <br>
+    <input type=button onclick="loadFromCsv('A')" value="load to A">
+    <input type=button onclick="loadFromCsv('B')" value="load to B">
+    <input type=button onclick="loadFromCsv('a')" value="load to a">
+
+    <script>
+        start();
+    </script>
+
+</body>
