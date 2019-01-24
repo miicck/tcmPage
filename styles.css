@@ -91,6 +91,15 @@ h1
     overflow: auto;
 }
 
+.pubTitle
+{
+    text-align: left;
+}
+
+.pubAuthors
+{
+    font-size: 15px;
+}
 
 .tab
 {
