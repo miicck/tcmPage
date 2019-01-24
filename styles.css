@@ -91,14 +91,23 @@ h1
     overflow: auto;
 }
 
-.pubTitle
+.pub
 {
+    padding: 10px;
     text-align: left;
 }
 
+.pubTitle
+{
+    font-style: italic;
+}
+
+.pubJournal,
 .pubAuthors
 {
+    padding-left: 15px;
     font-size: 15px;
+    color: #555;
 }
 
 .tab
