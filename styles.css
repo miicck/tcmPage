@@ -9,6 +9,7 @@ body
     background-color: #eee;
     margin: 0;
     padding: 0;
+    overflow: scroll;
 }
 
 a
@@ -25,25 +26,26 @@ a.inline
 .figures
 {
     float: left;
-    width: 27vw;
-    padding-left: 1vw;
+    width: 512px;
 }
 
 .contentText
 {
     float: left;
     text-align: justify;
-    width: 28vw;
+    width: 500px;
+    padding: 6px;
 }
 
 img.figure
 {
-    width: 26vw;
+    width: 100%;
 }
 
 div.figure
 {
-    width: 30vw;
+    width: 500px;
+    padding: 6px;
     text-align: center;
     overflow: hidden;
 }
@@ -51,45 +53,44 @@ div.figure
 h1
 {
     font-size: 20px;
+    margin: 0;
+    margin-top: 20px;
 }
 
 .caption
 {
 }
 
-.buffer
+.buffer,
+.header
 {
-    height: 2vw;
+    height: 32px;
 }
 
-.content
+.header
 {
-    padding: 2vw;
+    position: fixed;
+    width: 1024px;
+    background-color: #eee;
 }
 
 .footer
 {
     background-color: #fff;
     text-align: center;
-    width: 60vw;
-    margin-left: 20vw;
+    width: 1024px;
+    margin: 0 auto;
 }
 
 .page
 {
     background-color: #fff;
-    width: 60vw;
-    margin-left: 20vw;
-    height: 8192px;
+    width: 1024px;
+    margin: 0 auto;
+    display: block;
+    overflow: auto;
 }
 
-.header
-{
-    position: fixed;
-    width: 60vw;
-    height: 32px;
-    background-color: #eee;
-}
 
 .tab
 {
