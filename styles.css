@@ -4,12 +4,24 @@
     font-size: 16px;
 }
 
+body,
+.header
+{
+   background-color: #aaa;
+}
+
 body
 {
-    background-color: #eee;
     margin: 0;
     padding: 0;
-    overflow: scroll;
+    overflow-x: none;
+    overflow-y: scroll;
+}
+
+.header
+{
+    position: fixed;
+    width: 1024px;
 }
 
 a
@@ -23,6 +35,12 @@ a.inline
     text-decoration: underline;
 }
 
+li.bullet
+{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 .figures
 {
     float: left;
@@ -33,8 +51,8 @@ a.inline
 {
     float: left;
     text-align: justify;
-    width: 500px;
-    padding: 6px;
+    width: 480px;
+    padding: 16px;
 }
 
 img.figure
@@ -67,20 +85,6 @@ h1
     height: 32px;
 }
 
-.header
-{
-    position: fixed;
-    width: 1024px;
-    background-color: #eee;
-}
-
-.footer
-{
-    background-color: #fff;
-    text-align: center;
-    width: 1024px;
-    margin: 0 auto;
-}
 
 .page
 {
@@ -129,4 +133,10 @@ h1
 .tab:hover
 {
     background-color: #fff;
+}
+
+.soundcloud_player
+{
+    height: 128px;
+    width: 100%;
 }
