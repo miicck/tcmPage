@@ -1,7 +1,7 @@
 :root
 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 body,
@@ -30,10 +30,11 @@ a
     color: black;
 }
 
-a.inline
+a.inline, li.a
 {
     text-decoration: underline;
 }
+
 
 li.bullet
 {
@@ -55,6 +56,11 @@ li.bullet
     padding: 16px;
 }
 
+li
+{
+    text-align: left;
+}
+
 img.figure
 {
     width: 100%;
@@ -62,8 +68,7 @@ img.figure
 
 div.figure
 {
-    width: 500px;
-    padding: 6px;
+    padding: 32px;
     text-align: center;
     overflow: hidden;
 }
@@ -73,6 +78,14 @@ h1
     font-size: 20px;
     margin: 0;
     margin-top: 20px;
+}
+
+h2
+{
+    font-size: 15px;
+    margin: 0;
+    color: #333;
+    margin-top: 10px;
 }
 
 .caption
